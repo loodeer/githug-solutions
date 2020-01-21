@@ -1,0 +1,31 @@
+{
+  "author": "loodeer",
+  "description": "githug 通关记录",
+  "plugins": [
+    "-sharing",
+    "donate",
+    "github-buttons",
+    "splitter"
+  ],
+  "pluginsConfig": {
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "riskers",
+          "repo": "gitbook-template",
+          "type": "star",
+          "size": "small",
+          "count": true
+        }
+      ]
+    },
+    "donate": {
+      "wechat": "https://tva1.sinaimg.cn/large/006tNbRwly1gb46lippbpj30eq0eimyn.jpg",
+      "alipay": "https://tva1.sinaimg.cn/large/006tNbRwly1gb46mboxrvj30f80f6773.jpg",
+      "title": "",
+      "button": "有赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    }
+  }
+}
