@@ -2,7 +2,13 @@
 
 [githug](https://github.com/Gazler/githug) 是 ruby 写的一个 `git` 游戏，window、mac、linux 系统下都可以玩。
 
-它把平常可能遇到的一些场景都实例化，变成一个一个的关卡，一共有 56 个关卡，本文档记录了我的通关记录。
+它把平常可能遇到的一些场景都实例化，变成一个一个的关卡。
+
+一共有 56 个关卡，本文档记录了我的通关记录。
+
+
+
+更好的阅读体验请访问电子书：[githug 通关记录](https://loodeer.github.io/githug-solutions/)
 
 
 
