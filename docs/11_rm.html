@@ -1,0 +1,991 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11: rm · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="loodeer">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12_rm_cached.html" />
+    
+    
+    <link rel="prev" href="10_number_of_files_committed.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"loodeer","repo":"githug-solutions","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    githug 通关记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_init.html">
+            
+                <a href="1_init.html">
+            
+                    
+                    1: init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_config.html">
+            
+                <a href="2_config.html">
+            
+                    
+                    2: config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_add.html">
+            
+                <a href="3_add.html">
+            
+                    
+                    3: add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_commit.html">
+            
+                <a href="4_commit.html">
+            
+                    
+                    4: commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_clone.html">
+            
+                <a href="5_clone.html">
+            
+                    
+                    5: clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6_clone_to_folder.html">
+            
+                <a href="6_clone_to_folder.html">
+            
+                    
+                    6: clone_to_folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7_ignore.html">
+            
+                <a href="7_ignore.html">
+            
+                    
+                    7: ignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8_include.html">
+            
+                <a href="8_include.html">
+            
+                    
+                    8: include
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_status.html">
+            
+                <a href="9_status.html">
+            
+                    
+                    9: status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10_number_of_files_committed.html">
+            
+                <a href="10_number_of_files_committed.html">
+            
+                    
+                    10: number_of_files_committed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="11_rm.html">
+            
+                <a href="11_rm.html">
+            
+                    
+                    11: rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12_rm_cached.html">
+            
+                <a href="12_rm_cached.html">
+            
+                    
+                    12: rm_cached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13_stash.html">
+            
+                <a href="13_stash.html">
+            
+                    
+                    13: stash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14_rename.html">
+            
+                <a href="14_rename.html">
+            
+                    
+                    14: rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15_restructure.html">
+            
+                <a href="15_restructure.html">
+            
+                    
+                    15: restructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16_log.html">
+            
+                <a href="16_log.html">
+            
+                    
+                    16: log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17_tag.html">
+            
+                <a href="17_tag.html">
+            
+                    
+                    17: tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18_push_tags.html">
+            
+                <a href="18_push_tags.html">
+            
+                    
+                    18: push_tags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="19_commit_amend.html">
+            
+                <a href="19_commit_amend.html">
+            
+                    
+                    19: commit_amend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="20_commit_in_future.html">
+            
+                <a href="20_commit_in_future.html">
+            
+                    
+                    20: commit_in_future
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="21_reset.html">
+            
+                <a href="21_reset.html">
+            
+                    
+                    21: reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="22_reset_soft.html">
+            
+                <a href="22_reset_soft.html">
+            
+                    
+                    22: reset_soft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="23_checkout_file.html">
+            
+                <a href="23_checkout_file.html">
+            
+                    
+                    23: checkout_file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="24_remote.html">
+            
+                <a href="24_remote.html">
+            
+                    
+                    24: remote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="25_remote_url.html">
+            
+                <a href="25_remote_url.html">
+            
+                    
+                    25: remote_url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="26_pull.html">
+            
+                <a href="26_pull.html">
+            
+                    
+                    26: pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="27_remote_add.html">
+            
+                <a href="27_remote_add.html">
+            
+                    
+                    27: remote_add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="28_push.html">
+            
+                <a href="28_push.html">
+            
+                    
+                    28: push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="29_diff.html">
+            
+                <a href="29_diff.html">
+            
+                    
+                    29: diff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="30_blame.html">
+            
+                <a href="30_blame.html">
+            
+                    
+                    30: blame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="31_branch.html">
+            
+                <a href="31_branch.html">
+            
+                    
+                    31: branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="32_checkout.html">
+            
+                <a href="32_checkout.html">
+            
+                    
+                    32: checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="33_checkout_tag.html">
+            
+                <a href="33_checkout_tag.html">
+            
+                    
+                    33: checkout_tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="34_checkout_tag_over_branch.html">
+            
+                <a href="34_checkout_tag_over_branch.html">
+            
+                    
+                    34: checkout_tag_over_branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="35_branch_at.html">
+            
+                <a href="35_branch_at.html">
+            
+                    
+                    35: branch_at
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="36_delete_branch.html">
+            
+                <a href="36_delete_branch.html">
+            
+                    
+                    36: delete_branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="37_push_branch.html">
+            
+                <a href="37_push_branch.html">
+            
+                    
+                    37: push_branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="38_merge.html">
+            
+                <a href="38_merge.html">
+            
+                    
+                    38: merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="39_fetch.html">
+            
+                <a href="39_fetch.html">
+            
+                    
+                    39: fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.41" data-path="40_rebase.html">
+            
+                <a href="40_rebase.html">
+            
+                    
+                    40: rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.42" data-path="41_rebase_onto.html">
+            
+                <a href="41_rebase_onto.html">
+            
+                    
+                    41: rebase_onto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.43" data-path="42_repack.html">
+            
+                <a href="42_repack.html">
+            
+                    
+                    42: repack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.44" data-path="43_cherry-pick.html">
+            
+                <a href="43_cherry-pick.html">
+            
+                    
+                    43: cherry-pick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.45" data-path="44_grep.html">
+            
+                <a href="44_grep.html">
+            
+                    
+                    44: grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.46" data-path="45_rename_commit.html">
+            
+                <a href="45_rename_commit.html">
+            
+                    
+                    45: rename_commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47" data-path="46_squash.html">
+            
+                <a href="46_squash.html">
+            
+                    
+                    46: squash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48" data-path="47_merge_squash.html">
+            
+                <a href="47_merge_squash.html">
+            
+                    
+                    47: merge_squash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49" data-path="48_reorder.html">
+            
+                <a href="48_reorder.html">
+            
+                    
+                    48: reorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50" data-path="49_bisect.html">
+            
+                <a href="49_bisect.html">
+            
+                    
+                    49: bisect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.51" data-path="50_stage_lines.html">
+            
+                <a href="50_stage_lines.html">
+            
+                    
+                    50: stage_lines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.52" data-path="51_find_old_branch.html">
+            
+                <a href="51_find_old_branch.html">
+            
+                    
+                    51: find_old_branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.53" data-path="52_revert.html">
+            
+                <a href="52_revert.html">
+            
+                    
+                    52: revert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.54" data-path="53_restore.html">
+            
+                <a href="53_restore.html">
+            
+                    
+                    53: restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.55" data-path="54_conflict.html">
+            
+                <a href="54_conflict.html">
+            
+                    
+                    54: conflict
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.56" data-path="55_submodule.html">
+            
+                <a href="55_submodule.html">
+            
+                    
+                    55: submodule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.57" data-path="56_contribute.html">
+            
+                <a href="56_contribute.html">
+            
+                    
+                    56: contribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >11: rm</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="11-rm">11: rm</h1>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwly1gb4doxegmxj328q0rkgsw.jpg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10_number_of_files_committed.html" class="navigation navigation-prev " aria-label="Previous page: 10: number_of_files_committed">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12_rm_cached.html" class="navigation navigation-next " aria-label="Next page: 12: rm_cached">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11: rm","level":"1.12","depth":1,"next":{"title":"12: rm_cached","level":"1.13","depth":1,"path":"12_rm_cached.md","ref":"12_rm_cached.md","articles":[]},"previous":{"title":"10: number_of_files_committed","level":"1.11","depth":1,"path":"10_number_of_files_committed.md","ref":"10_number_of_files_committed.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","donate","github-buttons","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://tva1.sinaimg.cn/large/006tNbRwly1gb46mboxrvj30f80f6773.jpg","alipayText":"支付宝打赏","button":"有赏","title":"","wechat":"https://tva1.sinaimg.cn/large/006tNbRwly1gb46lippbpj30eq0eimyn.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"loodeer","repo":"githug-solutions","type":"star","size":"small","count":true}]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"loodeer","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*","description":"githug 通关记录"},"file":{"path":"11_rm.md","mtime":"2020-01-21T13:36:08.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-21T16:03:59.368Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
