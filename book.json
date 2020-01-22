@@ -5,7 +5,9 @@
     "-sharing",
     "donate",
     "github-buttons",
-    "splitter"
+    "splitter",
+    "pageview-count",
+    "lightbox"
   ],
   "pluginsConfig": {
     "github-buttons": {
